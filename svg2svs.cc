@@ -132,6 +132,7 @@ int main(int argc, char *argv[]) {
 
   SvsMetadata svs_metadata = {};
   svs_metadata.mpp = 10.0 * kNumSubDivisions / base_width;
+  svs_metadata.app_mag = 40;
 
   if (!vips2svs_encoder(in, output_svs.c_str(), layers_factors, svs_metadata))
     fprintf(stderr, "Error while generating svs pyramid file.\n");

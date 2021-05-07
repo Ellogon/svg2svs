@@ -23,7 +23,7 @@
 // Set of supported svs Aperio metadata.
 typedef struct {
   std::optional<double> mpp;  // microns per pixel.
-  std::optional<double> app_mag;  // apparent magnification.
+  std::optional<int> app_mag;  // apparent magnification.
 } SvsMetadata;
 
 // Encodes a generic vips in .svs format.
